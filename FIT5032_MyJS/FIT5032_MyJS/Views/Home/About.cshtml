@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Use this area to provide additional information.</p>
+    <p>
+        Date:<input type="text" id="datepicker" />
+    </p>
+    @section scripts
+    {
+        <script>
+            $('.datepicker').datepicker();
+            $('.datepicker').datepicker("setDate", new Date(2023, 09, 01));
+        </script>
+    }
+</main>
